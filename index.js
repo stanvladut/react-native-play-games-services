@@ -3,4 +3,8 @@ import { NativeModules } from 'react-native';
 
 const { RNPlayGamesServices } = NativeModules;
 
-export default RNPlayGamesServices;
+export default class PlayGamesServices {
+  async test() {
+    return await RNPlayGamesServices.test();
+  }
+}
